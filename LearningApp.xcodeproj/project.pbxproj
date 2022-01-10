@@ -17,6 +17,7 @@
 		18651487278CC37F002EAA4E /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18651486278CC37F002EAA4E /* HomeViewRow.swift */; };
 		18651489278CC574002EAA4E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18651488278CC574002EAA4E /* HomeView.swift */; };
 		1865148B278CC8C5002EAA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865148A278CC8C5002EAA4E /* ContentView.swift */; };
+		1866107B278CE20F00F4B342 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866107A278CE20F00F4B342 /* ContentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		18651486278CC37F002EAA4E /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		18651488278CC574002EAA4E /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1865148A278CC8C5002EAA4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1866107A278CE20F00F4B342 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				18651488278CC574002EAA4E /* HomeView.swift */,
 				18651486278CC37F002EAA4E /* HomeViewRow.swift */,
 				1865148A278CC8C5002EAA4E /* ContentView.swift */,
+				1866107A278CE20F00F4B342 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				18651487278CC37F002EAA4E /* HomeViewRow.swift in Sources */,
 				1865146B278CAC25002EAA4E /* LearningApp.swift in Sources */,
 				1865148B278CC8C5002EAA4E /* ContentView.swift in Sources */,
+				1866107B278CE20F00F4B342 /* ContentDetailView.swift in Sources */,
 				1865147E278CAF9D002EAA4E /* ContentModel.swift in Sources */,
 				18651489278CC574002EAA4E /* HomeView.swift in Sources */,
 				18651484278CB3B0002EAA4E /* Models.swift in Sources */,
