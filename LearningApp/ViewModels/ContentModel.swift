@@ -19,6 +19,9 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    // Current lesson explanation
+    @Published var lessonDescription = NSAttributedString()
+    
     
     var styleData: Data?
     
@@ -90,6 +93,7 @@ class ContentModel: ObservableObject {
         }
         
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        //lessonDescription = currentLesson?.ex
         
     }
     
@@ -117,6 +121,26 @@ class ContentModel: ObservableObject {
         } else {
             return false
         }
+        
+    }
+    
+    // MARK: - Code Styling
+    
+    private func addStyling(_ htmlString: String) -> NSAttributedString {
+        
+        var resultString = NSAttributedString()
+        var data = Data()
+        // add styling data
+        if styleData != nil {
+            data.append(self.styleData!)
+        }
+        // add html data
+        data.append(Data(htmlString.utf8))
+        // convert to attributed string
+        if let attributedString =
+        
+        
+        return resultString
         
     }
     
