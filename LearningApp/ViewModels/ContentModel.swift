@@ -93,7 +93,7 @@ class ContentModel: ObservableObject {
         }
         
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        //lessonDescription = currentLesson?.ex
+        lessonDescription = addStyling(currentLesson!.explanation)
         
     }
     
@@ -105,10 +105,12 @@ class ContentModel: ObservableObject {
         if currentLessonIndex < currentModule!.content.lessons.count {
             
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
+            lessonDescription = addStyling(currentLesson!.explanation)
             
         } else {
             currentLessonIndex = 0
             currentLesson = nil
+            
         }
         // set the current lesson property
         
@@ -136,10 +138,13 @@ class ContentModel: ObservableObject {
         }
         // add html data
         data.append(Data(htmlString.utf8))
+        
         // convert to attributed string
-        if let attributedString =
-        
-        
+        if let attributedString = try? NSAttributedString(data: data, options:[.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
+            
+            resultString = attributedString
+            
+        }
         return resultString
         
     }
