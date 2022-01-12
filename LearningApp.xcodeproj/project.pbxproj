@@ -23,6 +23,7 @@
 		18661084278CEB1200F4B342 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18661083278CEB1200F4B342 /* Constants.swift */; };
 		18661086278DC11700F4B342 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18661085278DC11700F4B342 /* CodeTextView.swift */; };
 		186610A2278DF6EC00F4B342 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186610A1278DF6EC00F4B342 /* RectangleCard.swift */; };
+		186610C4278F202D00F4B342 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186610C3278F202D00F4B342 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		18661083278CEB1200F4B342 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18661085278DC11700F4B342 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		186610A1278DF6EC00F4B342 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		186610C3278F202D00F4B342 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				1866107C278CE64900F4B342 /* ContentViewRow.swift */,
 				18661085278DC11700F4B342 /* CodeTextView.swift */,
 				186610A1278DF6EC00F4B342 /* RectangleCard.swift */,
+				186610C3278F202D00F4B342 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186610C4278F202D00F4B342 /* TestView.swift in Sources */,
 				18651487278CC37F002EAA4E /* HomeViewRow.swift in Sources */,
 				1865146B278CAC25002EAA4E /* LearningApp.swift in Sources */,
 				1866107F278CE6B000F4B342 /* ContentView.swift in Sources */,

@@ -19,6 +19,10 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    // Current Question
+    @Published var currentQuestion : Question?
+    var currentQuestionIndex = 0
+    
     // Current lesson explanation
     @Published var lessonDescription = NSAttributedString()
     
@@ -27,6 +31,7 @@ class ContentModel: ObservableObject {
     
     // Current selected content and test
     @Published var currentContentSelected:Int?
+    @Published var currentTestSelected:Int?
     
     init() {
         
@@ -125,6 +130,19 @@ class ContentModel: ObservableObject {
             return true
         } else {
             return false
+        }
+        
+    }
+    
+    func beginTest(_ moduleId:Int) {
+        
+        // Set Current Module
+        beginModule(moduleId)
+        // Set Current Question
+        currentQuestionIndex = 0
+        
+        if currentModule?.test.questions.count ?? 0 > 0 {
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
         }
         
     }
